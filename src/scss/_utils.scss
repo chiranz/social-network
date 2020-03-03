@@ -1,5 +1,20 @@
 @import "./config";
 
+// Text styles
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 // Backgrounds
 
 .bg {
@@ -23,4 +38,62 @@
     @include set-background(#ffffff);
     border: #ccc 1px solid;
   }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  background: $light-color;
+  color: #333333;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  transition: all 0.4s ease;
+  &:hover {
+    background: lighten($dark-color, 20%);
+    color: #ffffff;
+  }
+
+  &.btn-primary {
+    @include set-background($primary-color);
+    &:hover {
+      background: darken($primary-color, 5%);
+    }
+  }
+  &.btn-dark {
+    @include set-background($dark-color);
+    &:hover {
+      background: darken($dark-color, 5%);
+    }
+  }
+  &.btn-danger {
+    @include set-background($danger-color);
+    &:hover {
+      background: darken($danger-color, 5%);
+    }
+  }
+  &.btn-success {
+    @include set-background($success-color);
+    &:hover {
+      background: darken($success-color, 5%);
+    }
+  }
+  &.btn-light {
+    @include set-background($light-color);
+    &:hover {
+      background: darken($light-color, 10%);
+    }
+  }
+}
+
+// Dark Overlay
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }

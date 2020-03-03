@@ -1,0 +1,16 @@
+.landing {
+  position: relative;
+  height: 100vh;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  &-inner {
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
