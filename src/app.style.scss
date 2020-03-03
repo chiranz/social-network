@@ -1,0 +1,29 @@
+@import "./scss/config";
+@import "./scss/utils";
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Raleway" sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
