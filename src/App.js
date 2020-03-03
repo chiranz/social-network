@@ -3,12 +3,14 @@ import "./app.style.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import Register from "./components/Register";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
+        <Route exact path="/register" component={Register} />
         <Route path="/" component={HomePage} />
       </Switch>
     </Router>
