@@ -36,6 +36,10 @@ $spaceamounts: (1, 2, 3, 4, 5);
   .mx-#{$space} {
     margin: 0 #{$space}rem;
   }
+  // Horizontal Margin
+  .mr-#{$space} {
+    margin: 0 #{$space}rem 0 0;
+  }
   // All around padding
   .p-#{$space} {
     padding: #{$space}rem;
