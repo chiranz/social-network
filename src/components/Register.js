@@ -27,11 +27,6 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function Register() {
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log("from submitted");
-    return;
-  };
   return (
     <section className="container">
       <Jumbo

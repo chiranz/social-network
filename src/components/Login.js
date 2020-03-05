@@ -18,11 +18,6 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function Login() {
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log("from submitted");
-    return;
-  };
   return (
     <section className="container">
       {/* Alerts */}
